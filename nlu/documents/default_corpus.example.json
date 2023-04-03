@@ -1,0 +1,36 @@
+{
+  "name": "<name of the corpus>",
+  "locale": "en-US <or another language>",
+  "data": [
+    {
+      "intent": "<the meaning of this language, something like 'greeting.hello'>",
+      "utterances": [
+        "<some examples of language with the meaning>",
+        "Hello there!",
+        "Hi there!"
+      ],
+      "answers": ["<Whatever you'd like the bot to respond with>"],
+      "buttons": [
+        {
+          "type": "<can be anything, basically, this list will just be sent to the client, which will determine the functionality based on the type>"
+        },
+        {
+          "type": "contact_me (<- example)"
+        }
+      ],
+      "triggers": [
+        {
+          "type": "<an action defined on your onyx core instance>",
+          "args": {
+            "example": "<whatever arguments need to be supplied to your action>"
+          },
+          "attachments": [
+            "session_ip_address",
+            "<you can define some attachments that should be sent with the request>"
+          ]
+        }
+      ],
+      "enhance": "<boolean, either true or false, this will determine whether or not an answer will be enhanced using chatgpt>"
+    }
+  ]
+}
