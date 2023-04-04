@@ -8,5 +8,3 @@ datastore/*
 storage/analytics/*
 storage/metadata/*
 storage/logs/*
-chatgpt_config.json
-default_corpus.json

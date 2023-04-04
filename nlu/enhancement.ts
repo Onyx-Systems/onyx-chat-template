@@ -129,7 +129,7 @@ export const getSpicedUpAnswer = async (
     ];
 
     const { data } = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo",
+      model: chatGPTConfif.model || "gpt-3.5-turbo",
       messages,
     });
 

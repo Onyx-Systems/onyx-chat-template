@@ -38,6 +38,6 @@ app.use("/nlu", NLURouter);
 app.use("/chat", ChatRouter);
 app.use("/training", TrainingRouter);
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.info(`Server is running on port ${process.env.PORT}`);
 });

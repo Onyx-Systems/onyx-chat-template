@@ -23,10 +23,16 @@ Here is an example of how to specify data for a new intent called `greeting.hell
         "Hi, I'm Onyx!",
         "Hey, I'm Onyx!",
         "Howdy, I'm Onyx!"
+      ],
+      "enhance": true,
+      "buttons": [
+        {
+          "type": "play_greeting",
+        }
       ]
     }
   ]
 }
 ```
 
-By specifying this, when the user says "Hello", "Hi", "Hey", or "Howdy", the chatbot will recognize the intent `greeting.hello`, and respond with one of the answers specified. You can be more complex with your corpora, and I would recommend seeing the nlp.js docs for more information.
+By specifying this, when the user says "Hello", "Hi", "Hey", or "Howdy", the chatbot will recognize the intent `greeting.hello`, and respond with one of the answers specified. You can be more complex with your corpora, and I would recommend seeing the nlp.js docs for more information. On top of that, there are some Onyx specific feature that you can use to make your chatbot more interactive. For example, buttons, which defined in your corpora, and when an action is selected, all associated buttons will be sent to the client, which will ultimately decide what to do with them.
